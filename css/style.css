@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    font-weight: 300;
+}
+
+/* inStyle for cart svg */
+.cart .a, .search .a{
+    
+    fill: none;
+    stroke: #000;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 0.592px;
+}
+/* end inStyle for cart svg */
+
+/* inStyle for logo svg */
+svg#Capa_1 {
+    width: 10px;
+}
+
+.logo .a {
+    font-size: 43px;
+    font-family: Poppins-Light, Poppins;
+    font-weight: 300;
+} 
+
+.logo .b {
+    fill: #000101;
+}
+
+.logo .c,
+.logo .e {
+    fill: none;
+}
+
+.logo .c {
+    stroke: #000101;
+}
+
+.logo .d {
+    stroke: none;
+}
+
+/* end inStyle for logo svg */
+
+/* header-logo-line styling start */
+
+.header-logo-line a {
+    text-decoration: none;
+}
+
+.header-logo-line, .header-nav{
+    text-align: -webkit-center;
+}
+
+.login-and-cart a{
+    margin-left: 30px;
+}
+.small-width{
+    max-width: 1400px;
+    margin: 0px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+  
+  
+
+.dropdown{
+display: inline-block;;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+.dropdown-content a {
+float: none;
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+
+.dropdown-content a:hover {
+background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+display: block;
+} 
+
+.logo {
+    margin-left: 40%;
+}
+
+
+/* header nav style start */
+.header-nav {
+    background-color: #F4F4F4;
+    padding: 10px 0px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #010101;
+    margin-left: 8px;
+}   
+
+.social-icons a{
+    margin-left: 8px;
+}
+
+
+/* header catagory */
+.header-category {
+    text-align: -webkit-center;
+}
+
+.header-category a{
+    text-decoration: none;
+    color: #010101;
+}
+
+
+.search {
+    background-color: #F4F4F4;
+    padding: 6px 6px 0px 6px;
+    border-radius: 70%;
+}
+
+.categories .dropdown {
+    margin-left: 25px;
+}
+
+.left-marg-0{
+    margin-left: 0px !important;
+}
+
+
+
+
+
