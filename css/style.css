@@ -65,6 +65,9 @@ svg#Capa_1 {
 .small-width{
     max-width: 1400px;
     margin: 0px 30px;
+}
+
+.flex-screen{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -127,6 +130,7 @@ display: block;
 /* header catagory */
 .header-category {
     text-align: -webkit-center;
+    padding-bottom: 8px;
 }
 
 .header-category a{
@@ -150,6 +154,289 @@ display: block;
 }
 
 
+/* slide show */
+.slide-show img{
+    max-width: 100%;
+    max-height: 100%;
+}
 
+.absolute-screen{
+    position: absolute;
+}
+
+.reletive-screen{
+    position: relative;
+}
+
+/* text */
+/* Slideshow container */
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+  
+  /* Hide the images by default */
+.mySlides {
+    display: none;
+}
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(245, 245, 245, 0.8);
+  }
+  
+  /* Caption text */
+  /* .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  } */
+
+  .dots-box{
+    position: absolute;
+    bottom:40px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    padding: 8px 12px;
+    position: absolute;
+    top: 30%;
+    left: 9%;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: white;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+.mySlides .numbertext h2{
+    font-size: 31px;
+    margin-bottom: 15px;
+    font-weight: 300;
+}
+.mySlides .numbertext p{
+    max-width: 360px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+.mySlides .numbertext button{  
+    padding: 8px 24px;
+    font-size: 15px;
+}
+/* end test */
+
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    /* slider code start */
+    .mySlides .numbertext h2{
+        font-size: 21px;
+        margin-bottom: 8px;
+        font-weight: 300;
+    }
+    .mySlides .numbertext p{
+        display: none;
+    }
+    .mySlides .numbertext button{  
+        padding: 2px 14px;
+        font-size: 8px;
+    }
+
+    .prev img, .next img{
+        width: 20px;
+        height: 20px;
+    }
+    /* slider code end */
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media (min-width: 600px) and (max-width : 768px) {
+    /* slider code start */
+   .mySlides .numbertext h2{
+        font-size: 21px;
+        margin-bottom: 8px;
+        font-weight: 300;
+    }
+    .mySlides .numbertext p{
+        max-width: 360px;
+        font-size: 10px;
+        margin-bottom: 15px;
+    }
+    .mySlides .numbertext button{  
+        padding: 2px 14px;
+        font-size: 10px;
+    }
+
+    .numbertext {
+        padding: 8px 12px;
+        top: 10%;
+        left: 9%;
+    }
+    /* slider code end */
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 769px) and (max-width:992px){
+    /* slider code start */
+    .mySlides .numbertext h2{
+        font-size: 26px;
+        margin-bottom: 8px;
+        font-weight: 300;
+    }
+    .mySlides .numbertext p{
+        max-width: 360px;
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+    .mySlides .numbertext button{  
+        padding: 4px 16px;
+        font-size: 10px;
+    }
+
+    .numbertext {
+        padding: 8px 12px;
+        top: 18%;
+        left: 9%;
+    }
+    /* slider code end */
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 993px) and (max-width: 1300px) {
+    /* slider code start */
+    .mySlides .numbertext h2{
+        font-size: 31px;
+        margin-bottom: 10px;
+        font-weight: 300;
+    }
+    .mySlides .numbertext p{
+        max-width: 360px;
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    .mySlides .numbertext button{  
+        padding: 6px 18px;
+        font-size: 10px;
+    }
+
+    .numbertext {
+        padding: 8px 12px;
+        top: 21%;
+        left: 9%;
+    }
+    /* slider code end */
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media (min-width: 1300px) and (max-width: 1700px) {
+    /* slider code start */
+    .mySlides .numbertext h2{
+        font-size: 36px;
+        margin-bottom: 15px;
+        font-weight: 300;
+    }
+    .mySlides .numbertext p{
+        max-width: 450px;
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    .mySlides .numbertext button{  
+        padding: 10px 26px;
+        font-size: 16px;
+    }
+
+    .numbertext {
+        padding: 8px 12px;
+        top: 21%;
+        left: 9%;
+    }
+    /* slider code end */
+
+}
+
+@media only screen and (min-width: 1700px) {
+    /* slider code start */
+    .mySlides .numbertext h2{
+        font-size: 45px;
+        margin-bottom: 15px;
+        font-weight: 300;
+    }
+    .mySlides .numbertext p{
+        max-width: 450px;
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    .mySlides .numbertext button{  
+        padding: 10px 32px;
+        font-size: 18px;
+    }
+
+    /* slider code end */
+}
 
 
